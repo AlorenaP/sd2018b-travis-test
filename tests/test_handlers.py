@@ -24,8 +24,8 @@ def user_info():
  #  assert response.status_code == 200
 
 def test_health():
-    message =get_health()
-    assert{"message":"ok"}==message
+    message = get_health()
+    assert{"message":"ok"} == message
 
 def test_get_user_info(mocker, user_info):
     # GIVEN not query parameters or payload
